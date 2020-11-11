@@ -45,6 +45,11 @@ class HeaderOne extends React.Component {
    render() {
       return (
          <div>
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '40px', backgroundColor: '#EEEEEE'}}>
+               <marquee style={{fontSize: '16px', fontFamily : "Century Gothic", }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus lobortis massa, eget vulputate nisi convallis in
+               </marquee>
+            </div>
             <AppBar position="static" className={`iron-header-wrapper bg-primary iron-header-v1 ${(this.state.fixedHeader) ? 'header-fixed' : ''}`}>
                <div className="iron-header-top py-30">
                   <div className="container">
