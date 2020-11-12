@@ -18,7 +18,7 @@ function HeaderMenu(props) {
    console.log("isScroll", isScroll);
    
    return (
-      <div className="horizontal-menu">
+      <div className="horizontal-menu d-flex justify-content-center">
          <ul className="d-inline-block iron-header-menu mb-0" >
             {navLinks.map((navLink, index) => {
                if (navLink.child_routes && navLink.child_routes != null) {
