@@ -49,22 +49,25 @@ class HeaderThree extends React.Component {
             <AppBar position="static"
                className={`iron-header-wrapper bg-primary iron-header-v3 ${(this.state.fixedHeader) ? 'header-fixed' : ''}`}
             >
-               <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '40px', backgroundColor: '#EEEEEE'}}>
-               <marquee style={{color: 'black', fontSize: '16px', fontFamily : "Century Gothic", }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus lobortis massa, eget vulputate nisi convallis in
-               </marquee>
-            </div>
-               {/* <div className="iron-header-top">
+           
+               <div className="iron-header-top">
                   <div className="container">
                      <Grid container spacing={0} >
-                        <Grid item md={6} lg={6} xl={6} className="d-flex justify-content-start align-items-center" >
+                        <Grid item md={6} lg={3} xl={3} className="d-flex justify-content-start align-items-center" >
                            <div className="iron-header-widgets d-flex justify-content-start align-items-center">
                               <div className="widget-text"><span className="base-color">Welcome to our store</span></div>
-                              <LanguageProvider />
+                              {/* <LanguageProvider /> */}
                               <CurrencyProvider />
                            </div>
                         </Grid>
-                        <Grid item xs={6} sm={6} md={6} lg={6} xl={6} className="d-flex justify-content-end align-items-center" >
+                         <Grid item xs={6} sm={6} md={6} lg={6} xl={6} className="d-flex">
+                               <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',}}>
+                           <marquee style={{color: '#fff', fontSize: '16px', fontFamily : "Century Gothic", }}>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus lobortis massa, eget vulputate nisi convallis in
+                           </marquee>
+                            </div>
+                         </Grid>
+                        <Grid item xs={6} sm={6} md={6} lg={3} xl={3} className="d-flex justify-content-end align-items-center" >
                            <div className="iron-header-widgets d-flex justify-content-end align-items-center ">
                               <Cart />
                               <Wishlist />
@@ -73,10 +76,10 @@ class HeaderThree extends React.Component {
                         </Grid>
                      </Grid>
                   </div>
-               </div> */}
+               </div>
 
                <div className="iron-header-middle py-md-25 py-10" style={{backgroundColor: '#283593'}}>
-                  <div className="d-flex justify-content-space-around" style={{marginLeft: '15px', marginRight: '15px'}}>
+                  <div className="container d-flex justify-content-space-around" >
                      <Grid container spacing={0} >
                         <Grid item xs={12} sm={12} md={12} lg={2} xl={2} className="d-flex justify-content-center justify-content-lg-start align-items-center" >
                            <Link to="/" className="iron-app-logo text-md-center d-inline-block">
@@ -86,20 +89,20 @@ class HeaderThree extends React.Component {
                                     </Typography> */}
                            </Link>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={12} lg={9} xl={9} >
+                        <Grid item xs={12} sm={12} md={12} lg={10} xl={10} >
                            <div className="position-relative">
                               <HeaderMenu isScroll={this.state.fixedHeader}/>
                               <SidebarMenu />
                               <SearchBox />
                            </div>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={12} lg={1} xl={1} >
+                        {/* <Grid item xs={12} sm={12} md={12} lg={1} xl={1} >
                              <div className="iron-header-widgets d-flex justify-content-end align-items-center ">
                               <Cart />
                               <Wishlist />
                               <Logout />
                            </div>
-                        </Grid>
+                        </Grid> */}
 
                         {/* <Grid item md={6} lg={6} xl={6} className="d-flex justify-content-end align-items-center" >
                            <SearchBoxV3 />

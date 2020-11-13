@@ -15,6 +15,7 @@ import PartenersSliderV2 from '../../components/widgets/PartenersSliderV2';
 import DownloadApp from '../../components/widgets/DownloadApp';
 import ContentLoader from '../../components/global/loaders/ContentLoader';
 import CtaBannerSection from '../../components/widgets/CtaBannerSection';
+import ShopCard from '../../components/widgets/ShopCard';
 
 //firebase
 import firebase from '../../firebase';
@@ -110,6 +111,11 @@ class HomePageThree extends React.Component {
                         <BannerSliderThree sliderData={banner} />
                      </div>
                   </div>
+                 {/* {Custom Cards added start} */}
+                  <div style={{marginBottom: '50px'}}>
+                     <ShopCard />
+                  </div>
+                 {/* {Custom Cards added start} */}
                   {/* features section start */}
                   <div className="iron-features-wrap pt-md-15">
                      <div className="container">
