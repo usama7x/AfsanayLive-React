@@ -26,7 +26,35 @@ export default function CollectionGallery(props) {
                   </div>
                </div>
             </Grid>
-            <Grid item xs={12} sm={12} md={8} lg={8} >
+            <Grid item xs={12} sm={12} md={4} lg={4} >
+               <div
+                  className="iron-gallery-item popular-item overlay-section-overlay position-relative"
+                  style={{ backgroundImage: 'url(' + require(`../../assets/images/${popular.thumb}`) + ')' }}
+               >
+                  <div className="end-left">
+                     <div className="overlay-section-content">
+                        <h4 className="mb-0 font-bold base-color">{popular.title}</h4>
+                        <h4 className="font-normal base-color">{popular.offer}</h4>
+                        <Button component={Link} to={popular.path} className="button btn-base">shop now</Button>
+                     </div>
+                  </div>
+               </div>
+            </Grid>
+            <Grid item xs={12} sm={12} md={4} lg={4} >
+               <div
+                  className="iron-gallery-item popular-item overlay-section-overlay position-relative"
+                  style={{ backgroundImage: 'url(' + require(`../../assets/images/${popular.thumb}`) + ')' }}
+               >
+                  <div className="end-left">
+                     <div className="overlay-section-content">
+                        <h4 className="mb-0 font-bold base-color">{popular.title}</h4>
+                        <h4 className="font-normal base-color">{popular.offer}</h4>
+                        <Button component={Link} to={popular.path} className="button btn-base">shop now</Button>
+                     </div>
+                  </div>
+               </div>
+            </Grid>
+            {/* <Grid item xs={12} sm={12} md={8} lg={8} >
                <Grid container spacing={4}>
                   {gallery.map((collection, index) => (
                      <Grid item xs={12} sm={6} md={6} lg={6} key={index} >
@@ -46,7 +74,7 @@ export default function CollectionGallery(props) {
                   ))
                   }
                </Grid>
-            </Grid>
+            </Grid> */}
          </Grid>
       </div>
    )

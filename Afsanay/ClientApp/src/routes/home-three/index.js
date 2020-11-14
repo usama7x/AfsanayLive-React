@@ -16,6 +16,7 @@ import DownloadApp from '../../components/widgets/DownloadApp';
 import ContentLoader from '../../components/global/loaders/ContentLoader';
 import CtaBannerSection from '../../components/widgets/CtaBannerSection';
 import ShopCard from '../../components/widgets/ShopCard';
+import BestDeal from '../../components/widgets/BestDeal';
 
 //firebase
 import firebase from '../../firebase';
@@ -111,23 +112,41 @@ class HomePageThree extends React.Component {
                         <BannerSliderThree sliderData={banner} />
                      </div>
                   </div>
+
                  {/* {Custom Cards added start} */}
-                  <div style={{marginBottom: '50px'}}>
+                  {/* <div style={{marginBottom: '50px'}}>
                      <ShopCard />
-                  </div>
-                 {/* {Custom Cards added start} */}
+                  </div> */}
+
                   {/* features section start */}
                   <div className="iron-features-wrap pt-md-15">
                      <div className="container">
                         <FeaturesV2 siteFeatures={siteFeatures} />
                      </div>
                   </div>
+
+                  {/* Heading section start */}
+                  {/* <div className="iron-features-wrap pt-md-15"> */}
+                     <div className="container mt-60 mb-20" style={{textAlign: 'center'}}>
+                        <h2>Lorem Ipsum </h2>
+                     </div>
+                  {/* </div> */}
+
                   {/* collection gallery section start */}
-                  <div className="iron-collection-gallery-wrap section-pad">
+                  {/* css class section-pad */}
+                  <div className="iron-collection-gallery-wrap ">
                      <div className="container">
                         <CollectionGallery collectionData={gallery} />
                      </div>
                   </div>
+
+                  {/*Custom Deal of the day starts*/}
+                  <div className="iron-collection-gallery-wrap section-pad">
+                     <div className="container">
+                        <BestDeal />
+                     </div>
+                  </div>
+
                   {/* shop category section start */}
                   <div className="iron-shop-category-wrap section-pad bg-grey">
                      <div className="container">
