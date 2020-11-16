@@ -188,10 +188,12 @@ class HomePageThree extends React.Component {
                         <PartenersSliderV2 clientdata={clients} />
                      </div>
                   </div>
+                  
                   {/* subscribe section start */}
                   <div className="iron-subscribe-box-v2 bg-primary section-pad position-relative">
                      <SubscribeBoxV2 />
                   </div>
+
                   {/* download section start */}
                   <div className="iron-dwnld-app-wrapper py-25">
                      <div className="container">

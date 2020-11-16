@@ -19,6 +19,7 @@ import HeaderOne from "./components/layouts/headers/HeaderOne";
 import HeaderTwo from "./components/layouts/headers/HeaderTwo";
 import HeaderThree from './components/layouts/headers/HeaderThree.js';
 import FooterOne from "./components/layouts/footers/FooterOne";
+import CustomFooter from "./components/layouts/footers/Footer";
 
 //review component
 import ProductReview from './components/global/review-popup/ProductReview';
@@ -53,6 +54,7 @@ import {
 import { hideAlert } from "./actions/action";
 
 // footer data
+import customFooterData from './assets/data/customFooterData';
 import footerData from './assets/data/footerData';
 import ThemeOptions from './components/ThemeOptions/ThemeOptions';
 import AdminLayout from './components/AdminLayout';
@@ -152,7 +154,8 @@ class App extends React.Component {
                            <Route path="/account" component={AsyncUserAccountComponent} />
                            <Route path="*" component={AsyncPageNotFoundComponent} />
                         </Switch>
-                        <FooterOne data={footerData} />
+                        <CustomFooter data={customFooterData} />
+                        {/* <FooterOne data={footerData} /> */}
                         <SweetAlert
                            success={alertType === 'success'}
                            error={alertType === 'error'}
